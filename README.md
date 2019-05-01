@@ -10,4 +10,6 @@ ansible-playbook -l webapp -i inventories/hosts.ini ping.yml
 
 ansible-playbook -l devopslab -i inventories/hosts.ini ping.yml
 
-ansible-playbook -l webapp -i inventories/hosts.ini httpd.yml
+ansible-playbook -l webapp -i inventories/hosts.ini httpd-install.yml
+
+ansible-playbook -l webapp -i inventories/hosts.ini httpd-remove.yml

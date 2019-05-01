@@ -1,0 +1,9 @@
+- hosts: all
+  serial: 1
+  gather_facts: false
+  tasks:
+    - name: uninstall the Apache
+      yum:
+        name: httpd
+        state: absent
+      become: yes
